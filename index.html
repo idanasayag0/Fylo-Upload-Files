@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Fylo data storage component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span> 
+    <p id="modal-text"></p>
+  </div>
+
+</div>
+  <div id="container">
+    <div id="mainContent">
+      <div id="leftContent" class="content">
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="Logo">
+          </div>
+        <div id="actions">
+         <button class="actionButton" ><input type="file" id="img-input" name="img"><img src="./assets/icon-document.svg" alt="document"></button>
+         <button class="actionButton"><img src="./assets/icon-folder.svg" alt="folder"></button>
+         <button class="actionButton"><img src="./assets/icon-upload.svg" alt="upload"></button>
+       </div>
+      </div>
+      <div id="rightContent" class="content">
+          <p id="usage"> You’ve used <span id="currentUsage"><span id="usageRemaining2">815</span> MB</span> of your storage</p>
+          <div id="addButton"></div>
+          <div id="usageBar">
+            <div id="usageFill"><div id="usageBall"></div></div>
+          </div>
+          <p id="usageMinLimit" class="usageLimit"><span id="totalmb">0</span> MB</p>
+          <p id="usageMaxLimit" class="usageLimit">10 MB</p>
+          <p id="usageLeft">
+            <span id="usageRemaining">185</span> MB Left
+          </p>
+      </div>
+    </div>
+      <div id="background">
+        <footer class="footer">
+          <p>Created by @IdanAsayag</p>
+        </footer>
+      </div>
+  </div>
+  
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
